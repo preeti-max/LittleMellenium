@@ -1,0 +1,16 @@
+ul{
+    display:flex;
+}
+li{
+    list-style: none;
+    margin-left: 15px;
+}
+.footer{
+    /* width:80%; */
+    height:45px;
+    border:2px solid #f2f2f2;
+    color:grey;
+}
+#terms{
+    margin-left:600px;
+}

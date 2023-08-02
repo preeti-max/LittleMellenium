@@ -1,0 +1,142 @@
+<div class="chart">
+  <ul>
+    <li><h1>Chart</h1></li>
+    <li class="end">
+      <div class="drop">
+        
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+<span>2022 - 2023</span><i class="fa fa-angle-right" aria-hidden="true"></i>
+
+      </div>
+    </li>
+    <li id="download"><i class="fa fa-download" aria-hidden="true"></i></li>
+  </ul>
+  <div class="filter">
+    <ul>
+      <li>
+        <div class="entry">
+          <label for="cars">Type:</label>
+          <select id="cars" name="cars">
+            <option value="volvo">RPC</option>
+          </select>
+        </div>
+      </li>
+      <li>
+        <div class="entry">
+          <label for="cars">Zone:</label>
+          <select id="cars" name="cars">
+            <option value="volvo">West</option>
+          </select>
+        </div>
+      </li>
+      <li>
+        <div class="entry">
+          <label for="cars">Region:</label>
+          <select id="cars" name="cars">
+            <option value="volvo">MUM</option>
+          </select>
+        </div>
+      </li>
+      <li>
+        <div class="entry">
+          <label for="cars">Team Type:</label>
+          <select id="cars" name="cars">
+            <option value="volvo">Marketing</option>
+          </select>
+        </div>
+      </li>
+      <li>
+        <div class="entry">
+          <label for="cars">Person Name:</label>
+          <select id="cars" name="cars">
+            <option value="volvo">Piya Mukherjee</option>
+          </select>
+        </div>
+      </li>
+      <li>
+        <div class="entry">
+          <label for="cars">Center Type:</label>
+          <select id="cars" name="cars">
+            <option value="volvo">Warrior</option>
+          </select>
+        </div>
+      </li>
+      <li>
+        <div class="entry">
+          <label for="cars">Center Name:</label>
+          <select id="cars" name="cars">
+            <option value="volvo">Malad - Mumbai</option>
+          </select>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="graph">
+    <h2 id="title">Average RPC</h2>
+    <img src="../../assets/graph.png" alt="graph" srcset="" />
+  </div>
+  <div class="table">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+
+      <!-- Position Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Name</th>
+        <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="zone">
+        <th mat-header-cell *matHeaderCellDef>Zone</th>
+        <td mat-cell *matCellDef="let element">{{ element.zone }}</td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="region">
+        <th mat-header-cell *matHeaderCellDef>Region</th>
+        <td mat-cell *matCellDef="let element">{{ element.region }}</td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="teamtype">
+        <th mat-header-cell *matHeaderCellDef>Team Type</th>
+        <td mat-cell *matCellDef="let element">{{ element.teamtype }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="month">
+        <th mat-header-cell *matHeaderCellDef>Month</th>
+        <td mat-cell *matCellDef="let element">{{ element.month }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="royalty">
+        <th mat-header-cell *matHeaderCellDef>Royalty</th>
+        <td mat-cell *matCellDef="let element">{{ element.royalty }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="enrollments">
+        <th mat-header-cell *matHeaderCellDef>Enrollments</th>
+        <td mat-cell *matCellDef="let element">{{ element.enrollments }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+    
+    
+    <mat-paginator  appStylePaginator #paginator [length]="100"
+   
+              [pageSize]="5"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              aria-label="Select page">
+              
+            
+</mat-paginator>
+
+
+
+
+   
+  </div>
+</div>
+<app-footer></app-footer>

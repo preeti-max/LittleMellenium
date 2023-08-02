@@ -1,0 +1,35 @@
+<div class="container">
+  <ul>
+    <li> <i class="fa fa-bars fa-2x" aria-hidden="true" (click)="toggleMenu()"></i></li>
+    
+
+    
+    <li><img id="logo" src="../../assets/logo.png" alt="" srcset="" />
+    </li>
+    <li><mat-icon id="notification">notifications_none</mat-icon></li>
+    
+    <li>
+      <div id="user">
+        <ul>
+          <li>
+            <img id="user-img" src="../../assets/user.jpg" alt="" srcset="" />
+          </li>
+          <li>
+            <div id="info">
+              <span style="color:#09a0eb">Head Office</span>
+              <br />
+              <span style="color:grey;">Raman Bajaj<i class="fa fa-angle-down" aria-hidden="true"></i> </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
+<div style="display: flex; flex-grow: grow;
+    margin-top: -32px;
+">
+    <app-sidebar [isOpen]="menuState" ></app-sidebar>
+<app-chart ></app-chart>
+</div>
+

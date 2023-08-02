@@ -1,0 +1,39 @@
+ul{
+    list-style: none;
+}
+.sidebar{
+    padding-top: 12px;
+    height:1380px;
+    width:18vw;
+    /* margin-top: 115px; */
+  
+    background-color: #09a0eb;
+    
+}
+li{
+    color:white;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 18px;;
+    /* padding-left: 20px;
+    padding-bottom: 15px; */
+    border:1px solid #09a0eb;border-radius:5px;
+    
+}
+li:hover{
+    background-color: #fff;
+    color:grey;
+}
+mat-icon{
+   margin-left: 25px;
+    margin-top: 20px;
+    
+}
+i{
+    margin-right: 8px;
+}
+.fa-angle-down{
+    margin-left:23px;
+}
+   
+
